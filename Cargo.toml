@@ -1,0 +1,16 @@
+[package]
+name = "rustranker"
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0-only"
+description = "Orders StimmApp's personal feed: candidates and the reader's signals in, an order out."
+repository = "https://github.com/Trainvent/rustranker"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+wasm-bindgen = "0.2.130"
